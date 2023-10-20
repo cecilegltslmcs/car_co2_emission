@@ -1,1 +1,1 @@
-# CO2 emissions from cars selled in France
+# CO2 emissions for cars sold in France
