@@ -17,15 +17,15 @@ Original dataset comes from ADEME (French Agency for Ecological Transition) and 
 
 ## Methodology
 
-All the data was cleaned up to simplify use of the final tool. As the data comes from a French website, a translation has been made to make it easier to understand. All these modifications are included in notebook 001.preparation_translation.ipynb.
+All the data was cleaned up to simplify use of the final tool. As the data comes from a French website, a translation has been made to make it easier to understand. All these modifications are included in notebook [001.preparation_translation.ipynb](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/notebooks/001.preparation_translation.ipynb).
 
-Exploratory data analysis and machine learning modelling were then carried out in notebook 002.notebook.ipynb.
+Exploratory data analysis and machine learning modelling were then carried out in notebook [002.notebook.ipynb](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/notebooks/002.notebook.ipynb).
 
-The best model was then trained and serialized in a Python script called train.py. The final model is deployed using Flask (code available in the predict.py script). Finally, this application was placed in a Docker container.
+The best model was then trained and serialized in a Python script called [train.py](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/scripts/train.py). The final model is deployed using Flask (code available in the [predict.py](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py) script). Finally, this application was placed in a Docker [container](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/Dockerfile).
 
 ## How to used the app ?
 
 - Install and run Docker
 - Build the image by using `docker build -t co2_emission .`
 - Run the container with the command `docker run co2_emission`
-- Run the script `predict-test.py`
+- Run the script `predict-test.py` [script for predictions](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py)
