@@ -23,7 +23,7 @@ Exploratory data analysis and machine learning modelling were then carried out i
 
 The best model was then trained and serialized in a Python script called [train.py](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/scripts/train.py). The final model is deployed using Flask (code available in the [predict.py](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py) script). Finally, this application was placed in a Docker [container](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/Dockerfile).
 
-## How to used the app ?
+## How to use the app ?
 
 - Install and run Docker
 - Build the image by using `docker build -t co2_emission .`
