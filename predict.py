@@ -10,7 +10,6 @@ for making predictions.
 Usage:
     You can use this API to send JSON data containing car information
     and receive a prediction of CO2 emissions in response.
-
 """
 
 import pickle
