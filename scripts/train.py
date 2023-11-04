@@ -34,19 +34,7 @@ def clean_and_process_dataset(PATH:str) -> pd.DataFrame:
     df = df[df["energy"] != 'electric']
 
     # Define lists of categorical and numerical columns
-    categorical = list(df.select_dtypes(include=['object']).columns)
     numerical = list(df.select_dtypes(exclude=['object']).columns)
-    numerical.pop(-1)
-
-    # Fill missing values in specific columns
-    columns_to_fill = [
-        "electrical_autonomy", 
-        "electrical_nominal_power", 
-        "elect_conso", 
-        "city_electrical_autonomy"
-        ]
-    for col in columns_to_fill:
-        df[col] = df[col].fillna(0)
     
     # Fill missing values in numerical columns with their medians
     df[numerical] = df[numerical].fillna(df[numerical].median())
