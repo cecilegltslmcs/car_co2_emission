@@ -27,5 +27,5 @@ The best model was then trained and serialized in a Python script called [train.
 
 - Install and run Docker
 - Build the image by using `docker build -t co2_emission .`
-- Run the container with the command `docker run co2_emission`
+- Run the container with the command `docker run -p 9696:9696 co2_emission`
 - Run the script `predict-test.py` --> [script for predictions](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py)
