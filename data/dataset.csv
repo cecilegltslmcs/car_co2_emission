@@ -633,7 +633,7 @@ volkswagen,passat,diesel,estate,1968,average_high,6,90.0,,1480,0.06,automatic,7,
 b.m.w.,128,gasoline,saloon,1998,average_low,16,195.0,,1445,0.13,automatic,8,malus,10.018,7.084,6.1579999999999995,7.155,7.214,,,,171.922
 fiat,500,electric,saloon,0,economy,3,,43.0,1206,0.0,electrical_variable_transmission,0,bonus,,,,,,,,,
 ford,tourneo_connect,diesel,leisure_activity_vehicle,1968,low,6,90.0,,1634,0.06,automatic,7,malus,6.8225,5.079,4.574,5.5440000000000005,5.3205,,,,143.373
-lamborghin,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
+lamborghini,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
 mini,mini,gasoline,saloon,1499,low,5,75.0,,1180,0.06,automatic,7,neutral,8.0115,5.5445,4.937,5.8375,5.7895,,,,136.987
 peugeot,traveller,diesel,minibus,1499,average_low,6,88.0,,1625,0.05,manual,6,malus,7.137499999999999,5.8545,5.6375,7.371,6.496,,,,170.26399999999998
 b.m.w.,x2,diesel,crossover_suv,1995,average_high,10,140.0,,1605,0.09,automatic,8,malus,7.095,5.7829999999999995,5.1475,5.8125,5.772,,,,155.178
@@ -853,7 +853,7 @@ ford,ecosport,gasoline,crossover_suv,998,low,6,92.0,,1284,0.07,manual,6,malus,6.
 b.m.w.,x4,gasoline,crossover_suv,2993,high,41,375.0,,2010,0.19,automatic,8,malus,15.8005,10.783000000000001,9.09,10.274000000000001,10.7485,,,,257.947
 kia,ev6,electric,crossover_suv,0,average_high,11,,143.0,2125,0.0,electrical_variable_transmission,0,neutral,,,,,,,,,
 b.m.w.,x5,phev_diesel,crossover_suv,2993,luxury,17,210.0,0.0,2190,0.1,automatic,8,malus,9.05,6.7435,6.3965,7.5405,7.226,,,,193.478
-lamborghin,aventador,gasoline,convertible,6498,luxury,83,574.0,,1715,0.33,automatic,7,malus,,,,,,,,,
+lamborghini,aventador,gasoline,convertible,6498,luxury,83,574.0,,1715,0.33,automatic,7,malus,,,,,,,,,
 opel,mokka,gasoline,crossover_suv,1199,low,7,96.0,,1220,0.08,automatic,8,malus,7.388999999999999,5.932499999999999,5.293,6.647,6.183,,,,141.80100000000002
 renault,megane,electric,saloon,0,economy,4,,55.0,1636,0.0,electrical_variable_transmission,0,bonus,,,,,,159.39999999999998,440.5,545.7,
 volkswagen,tiguan,diesel,crossover_suv,1968,average_high,8,110.0,,1556,0.07,automatic,7,malus,7.431,5.3985,4.709,5.572,5.518000000000001,,,,150.007
@@ -2206,9 +2206,9 @@ cupra,formentor,diesel,crossover_suv,1968,average_high,8,110.0,,1552,0.07,automa
 volkswagen,tiguan,diesel,crossover_suv,1968,average_high,8,110.0,,1556,0.07,automatic,7,malus,7.431,5.3985,4.709,5.572,5.518000000000001,,,,150.007
 b.m.w.,430,phev_diesel,convertible,2993,average_high,17,210.0,0.0,1880,0.11,automatic,8,malus,7.92,5.5440000000000005,4.859500000000001,5.5855,5.664,,,,154.975
 citroen,space_tourer,electric,minibus,0,average_low,4,,57.0,2056,0.0,electrical_variable_transmission,0,bonus,,,,,,270.85,312.0,427.0,
-lamborghin,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
+lamborghini,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
 ford,fiesta,e85,saloon,999,low,5,69.9,,1114,0.06,manual,6,neutral,9.5075,7.2295,6.699,8.2335,7.725499999999999,,,,129.051
-lamborghin,aventador,gasoline,coupe,6498,luxury,81,566.0,,1640,0.35,automatic,7,malus,,,,,,,,,
+lamborghini,aventador,gasoline,coupe,6498,luxury,81,566.0,,1640,0.35,automatic,7,malus,,,,,,,,,
 b.m.w.,x2,gasoline,crossover_suv,1499,average_high,7,100.0,,1410,0.07,manual,6,malus,8.663499999999999,6.4025,5.6465,6.6635,6.5634999999999994,,,,154.375
 jaguar,xf,phev_diesel,saloon,1998,high,11,150.0,10.5,1833,0.08,automatic,8,malus,6.9965,5.985,5.0440000000000005,5.946999999999999,5.816000000000001,,,,156.19099999999997
 mini,mini,gasoline,saloon,1998,low,9,131.0,,1265,0.1,manual,6,malus,8.8695,6.28,5.734999999999999,6.515000000000001,6.54,,,,154.144
@@ -2453,7 +2453,7 @@ volkswagen,caddy,diesel,leisure_activity_vehicle,1968,low,6,90.0,,1646,0.05,auto
 dacia,sandero,autogas,saloon,999,low,5,67.0,,1130,0.07,manual,6,neutral,7.01,5.0825,4.7219999999999995,5.7315000000000005,5.458,,,,126.33600000000001
 dacia,sandero,autogas,saloon,999,low,5,74.0,,1130,0.07,manual,6,neutral,10.048,6.6739999999999995,5.9879999999999995,7.146000000000001,7.0795,,,,112.00899999999999
 mercedes,v_300,diesel,multi_purpose_vehicle,1950,high,14,174.0,,2067,0.08,automatic,9,malus,9.955,7.6965,6.686999999999999,7.994,7.792,,,,210.11100000000002
-lamborghin,aventador,gasoline,coupe,6498,luxury,83,574.0,,1665,0.34,automatic,7,malus,,,,,,,,,
+lamborghini,aventador,gasoline,coupe,6498,luxury,83,574.0,,1665,0.34,automatic,7,malus,,,,,,,,,
 skoda,octavia,diesel,saloon,1968,average_high,6,85.0,,1352,0.06,manual,6,neutral,5.9559999999999995,4.2935,3.7935,4.402,4.3995,,,,119.8
 b.m.w.,118,diesel,saloon,1995,average_low,8,110.0,,1430,0.08,automatic,8,malus,6.3919999999999995,5.033,4.5985,5.17,5.128500000000001,,,,137.76399999999998
 toyota,aygo_x,gasoline,saloon,998,economy,4,53.0,,945,0.06,manual,5,neutral,5.3580000000000005,4.4254999999999995,4.232,5.504,4.8725000000000005,,,,110.457
@@ -3755,7 +3755,7 @@ volkswagen,golf,diesel,saloon,1968,average_low,11,147.0,,1391,0.11,automatic,7,m
 b.m.w.,m3,gasoline,saloon,2993,high,41,375.0,,1780,0.21,automatic,8,malus,15.457,10.117,8.602,9.36,10.0925,,,,243.92
 renault,trafic,diesel,minibus,1997,average_high,8,110.0,,1963,0.06,manual,6,malus,8.3875,7.011,6.2780000000000005,7.9065,7.2865,,,,193.56300000000002
 b.m.w.,340,phev_diesel,saloon,2993,high,22,250.0,0.0,1800,0.14,automatic,8,malus,10.3795,6.007,5.218,5.7705,6.2620000000000005,,,,176.421
-lamborghin,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
+lamborghini,urus,gasoline,crossover_suv,3996,luxury,61,478.0,,2197,0.22,automatic,8,malus,,,,,,,,,
 skoda,kodiaq,gasoline,crossover_suv,1498,high,8,110.0,,1597,0.07,automatic,7,malus,8.993500000000001,6.922499999999999,6.0075,7.0585,6.9645,,,,163.10999999999999
 mini,countryman,diesel,crossover_suv,1995,low,8,110.0,,1475,0.07,manual,6,malus,5.961,4.785500000000001,4.448,5.231,4.996,,,,133.068
 mercedes,gle_350,phev_gas,crossover_suv,1991,luxury,12,155.0,70.0,2530,0.06,automatic,9,neutral,,,,,1.2425000000000002,263.365,84.65,91.25,
@@ -7028,7 +7028,7 @@ renault,koleos,gasoline,crossover_suv,1332,average_high,8,116.0,,1515,0.08,autom
 mercedes,vito,diesel,minibus,1950,average_low,9,120.0,,1982,0.06,automatic,9,malus,9.5135,7.469,6.561,7.7135,7.548,,,,203.586
 skoda,scala,gasoline,saloon,1498,average_low,8,110.0,,1198,0.09,automatic,7,malus,7.9125,5.7875,5.0305,5.869,5.866,,,,138.367
 mercedes,vito,diesel,minibus,1950,average_low,9,120.0,,1982,0.06,automatic,9,malus,9.5135,7.469,6.561,7.7135,7.548,,,,203.586
-lamborghin,aventador,hev_gas,coupe,6498,luxury,83,574.0,6.0,1705,0.34,automatic,7,malus,,,,,,,,,
+lamborghini,aventador,hev_gas,coupe,6498,luxury,83,574.0,6.0,1705,0.34,automatic,7,malus,,,,,,,,,
 dacia,duster,diesel,crossover_suv,1461,low,6,84.0,,1443,0.06,manual,6,malus,5.6845,5.211,4.838,6.205500000000001,5.5120000000000005,,,,143.698
 ford,transit_custom,diesel,minibus,1995,average_low,5,77.3,,2012,0.04,manual,6,malus,8.542,7.478999999999999,7.486,9.3645,8.2915,,,,215.85699999999997
 ford,transit_custom,diesel,minibus,1995,average_low,7,95.6,,2093,0.05,automatic,6,malus,10.296,8.0125,7.2219999999999995,9.091000000000001,8.4555,,,,226.06700000000006
