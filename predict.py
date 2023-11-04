@@ -15,6 +15,19 @@ app = Flask("co2_emission")
 
 @app.route("/predict", methods=['POST'])
 def predict():
+    """
+    Predict CO2 emissions of a car based on the received JSON data.
+
+    Parameters
+    ----------
+    car : dict
+        A dictionary containing car information in JSON format.
+
+    Returns
+    -------
+    dict
+        A dictionary containing the predicted CO2 emission.
+    """
     car = request.get_json()
     
     X = dv.transform([car])
