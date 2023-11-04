@@ -18,11 +18,15 @@ def clean_and_process_dataset(PATH:str) -> pd.DataFrame:
     """
     Load a dataset from the given file path and return a cleaned version.
 
-    Args:
-        PATH (str): The path to the dataset file.
+    Parameters
+    ----------
+    PATH : str
+        The path to the dataset file.
 
-    Returns:
-        DataFrame: A Pandas DataFrame containing the cleaned dataset.
+    Returns
+    -------
+    pandas.DataFrame
+        A Pandas DataFrame containing the cleaned dataset.
     """
     df = pd.read_csv(PATH)
 
@@ -64,16 +68,23 @@ def clean_and_process_dataset(PATH:str) -> pd.DataFrame:
 
 def split_and_prepare_data(df:pd.DataFrame) -> (pd.DataFrame, pd.DataFrame, np.array, np.array):
     """
-    Splits the dataset into training and testing sets and prepares them for modeling.
+    Split the dataset into training and testing sets and prepare them for modeling.
 
-    Args:
-        df (pd.DataFrame): The dataset to split.
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        The dataset to split.
 
-    Returns:
-        pd.DataFrame: Training data without the 'co2_emission' column.
-        pd.DataFrame: Testing data without the 'co2_emission' column.
-        np.array: Target values for the training data.
-        np.array: Target values for the testing data.
+    Returns
+    -------
+    pandas.DataFrame
+        Training data without the 'co2_emission' column.
+    pandas.DataFrame
+        Testing data without the 'co2_emission' column.
+    numpy.ndarray
+        Target values for the training data.
+    numpy.ndarray
+        Target values for the testing data.
     """
     df_train, df_test = train_test_split(df, test_size=0.2, random_state=42)
 
@@ -90,14 +101,20 @@ def split_and_prepare_data(df:pd.DataFrame) -> (pd.DataFrame, pd.DataFrame, np.a
 
 def train_random_forest_model(df:pd.DataFrame, y_train:np.array) -> (DictVectorizer, RandomForestRegressor):
     """
-    Trains a Random Forest regression model and returns a DictVectorizer and the trained model.
+    Train a Random Forest regression model and return a DictVectorizer and the trained model.
 
-    Args:
-        df (pd.DataFrame): Dataset with the training data.
-        y_train (np.array): Array with the target variable.
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        Dataset with the training data.
+    y_train : numpy.ndarray
+        Array with the target variable.
 
-    Returns:
-        Tuple[DictVectorizer, RandomForestRegressor]: A tuple containing a DictVectorizer and a trained Random Forest model.
+    Returns
+    -------
+    Tuple[DictVectorizer, RandomForestRegressor]
+        A tuple containing a DictVectorizer for transforming the data and a trained Random
+        Forest model for regression.
     """
     train_dicts = df.to_dict(orient='records')
     dv = DictVectorizer(sparse=False)
@@ -117,15 +134,21 @@ def train_random_forest_model(df:pd.DataFrame, y_train:np.array) -> (DictVectori
 
 def predict_co2_emission(dv: DictVectorizer, model: RandomForestRegressor, df: pd.DataFrame) -> np.array:
     """
-    Predicts CO2 emissions of cars and returns the predicted values.
+    Predict CO2 emissions of cars and return the predicted values.
 
-    Args:
-        dv (DictVectorizer): DictVectorizer for transforming car information.
-        model (RandomForestRegressor): Trained model for predicting CO2 emissions.
-        df (pd.DataFrame): Information of cars in a DataFrame.
+    Parameters
+    ----------
+    dv : DictVectorizer
+        A DictVectorizer for transforming car information.
+    model : RandomForestRegressor
+        A trained model for predicting CO2 emissions.
+    df : pandas.DataFrame
+        Information of cars in a DataFrame.
 
-    Returns:
-        np.array: An array containing the predicted CO2 emissions.
+    Returns
+    -------
+    numpy.ndarray
+        An array containing the predicted CO2 emissions.
     """
     test_dicts = df.to_dict(orient='records')
     X_test = dv.transform(test_dicts)
