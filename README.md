@@ -1,9 +1,5 @@
 # CO2 emissions for cars sold in France
 
-*Author: Cécile Guillot*
-
-*Last Update: 4/11/2023*
-
 ## Summary
 
 The fight against greenhouse gas emissions is becoming an important issue in our world. By changing our habits, we can ensure that we don't add too much to global warming. One of the habits we can change is the way we travel. We can take public transport for our daily journeys, or the bus or train for journeys further afield, but sometimes we have no choice but to use the car. So it can be useful to know the CO2 emissions produced by your own vehicle, or to help you buy a new one.
@@ -13,7 +9,6 @@ The aim of this project is to help people get an idea of the CO2 emissions produ
 ## Repo Structure
 
 ```bash
-
 .
 |── data
     |── dataset.csv                         # transformed dataset
@@ -32,8 +27,6 @@ The aim of this project is to help people get an idea of the CO2 emissions produ
 └── README.md
 ```
 
-
-
 ## Dataset
 
 Original dataset comes from ADEME (French Agency for Ecological Transition) and can be downloaded [here](https://data.ademe.fr/datasets/ademe-car-labelling). Data are also available in the folder "[data](https://github.com/cecilegltslmcs/car_co2_emission/tree/main/data)".
@@ -48,7 +41,10 @@ The best model was then trained and serialized in a Python script called [train.
 
 ## How to use the app ?
 
+**Prerequisite:**
 - Install and run Docker
+
+**Instructions:**
 - Build the image by using `docker build -t co2_emission .`
 - Run the container with the command `docker run -p 9696:9696 co2_emission`
 - Run the script `predict-test.py` --> [script for predictions](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py)
