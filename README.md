@@ -10,6 +10,29 @@ The fight against greenhouse gas emissions is becoming an important issue in our
 
 The aim of this project is to help people get an idea of the CO2 emissions produced by their car, and also to help them make the right decision when buying a new vehicle. Based on the data that motorists can find in their car's documentation and using our tool, they can get an idea of their car's CO2 emissions.
 
+## Repo Structure
+
+```bash
+
+.
+|── data
+    |── dataset.csv                         # transformed dataset
+    |── original_dataset.csv                # dataset from ADEME website
+|── notebooks
+    |── 001.preparation_translation.ipynb   # preparation and translation
+    |── 002.notebook.ipynb                  # analysis and modeling
+|── scripts
+    |── predict-test.py                     # contains a sample to test api
+    |── train.py                            # train the final model
+|── Dockerfile                              # serving the model in a container
+|── Pipfile                                 # pipenv description
+|── Pipfile.lock                            # pipenv packages
+|── predict.py                              # flask api
+|── random_forest.bin                       # final model
+└── README.md
+```
+
+
 
 ## Dataset
 
