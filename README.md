@@ -63,8 +63,8 @@ The best model was then trained and serialized in a Python script called [train.
 - Create deployment environment `eb init -p "Docker running on 64bit Amazon Linux 2" -r eu-west-3 co2-emission-serving`
 - Deploy api on AWS EB `eb create co2-emission-serving-env`
 
-![configuration_panel_aws](Illustrations/Configuration_panel_deployment.png)
+![configuration_panel_aws](illustrations/Configuration_panel_deployment.png)
 *Successful deployment !*
 
-![Alt text](Illustrations/use_services.png)
+![console_requesting_aws_service](illustrations/use_services.png)
 *Sending request to the API on the Cloud*
