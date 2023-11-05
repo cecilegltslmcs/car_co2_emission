@@ -27,8 +27,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 
-INPUT_DATASET = "data/dataset.csv"
-OUTPUT_FILE = "random_forest.bin"
+# path for Linux System
+INPUT_DATASET = "../data/dataset.csv"
+OUTPUT_FILE = "../random_forest.bin"
+
+# path for Windows OS
+# INPUT_DATASET = "data/dataset.csv"
+# OUTPUT_FILE = "random_forest.bin"
 
 def clean_and_process_dataset(path_file:str)-> pd.DataFrame:
     """
@@ -94,11 +99,11 @@ def split_and_prepare_data(dataset:pd.DataFrame)-> (pd.DataFrame, pd.DataFrame, 
     train_dataset = train_dataset.reset_index(drop=True)
     test_dataset = test_dataset.reset_index(drop=True)
 
-    train_values = df_train["co2_emission"].values
-    test_values = df_test["co2_emission"].values
+    train_values = train_dataset["co2_emission"].values
+    test_values = test_dataset["co2_emission"].values
 
-    del df_train['co2_emission']
-    del df_test['co2_emission']
+    del train_dataset['co2_emission']
+    del test_dataset['co2_emission']
 
     return train_dataset, test_dataset, train_values, test_values
 
