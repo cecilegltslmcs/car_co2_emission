@@ -52,3 +52,17 @@ The best model was then trained and serialized in a Python script called [train.
 
 - Run the container with the command `docker run -p 9696:9696 co2_emission`
 - Run the script `predict-test.py` --> [script for predictions](https://github.com/cecilegltslmcs/car_co2_emission/blob/main/predict.py)
+
+## Deployment on Cloud using AWS ElasticBeanstalk
+
+**Instructions:**
+
+- Install AWS EB cli with Pipenv `pipenv install -d awsebcli`
+- Create deployment environment `eb init -p "Docker running on 64bit Amazon Linux 2" -r eu-west-3 co2-emission-serving`
+- Deploy api on AWS EB `eb create co2-emission-serving-env`
+
+![configuration_panel_aws](Illustrations/Configuration_panel_deployment.png)
+*Successful deployment !*
+
+![Alt text](Illustrations/use_services.png)
+*Sending request to the API on the Cloud*
