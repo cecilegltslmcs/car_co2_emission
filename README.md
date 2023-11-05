@@ -13,24 +13,26 @@ The aim of this project is to help people get an idea of the CO2 emissions produ
 |── data
     |── dataset.csv                         # transformed dataset
     |── original_dataset.csv                # dataset from ADEME website
+|── illustrations                           # screenshots
 |── notebooks
     |── 001.preparation_translation.ipynb   # preparation and translation
     |── 002.notebook.ipynb                  # analysis and modeling
 |── scripts
     |── predict-test.py                     # contains a sample to test api
     |── train.py                            # train the final model
-|── .gitignore    
+|── .gitignore
+|── .dockerignore   
 |── Dockerfile                              # serving the model in a container
 |── Pipfile                                 # pipenv description
 |── Pipfile.lock                            # pipenv packages
-|── predict.py                              # flask api
+|── predict.py                              # Flask api
 |── random_forest.bin                       # final model
 └── README.md
 ```
 
 ## Dataset
 
-Original dataset comes from ADEME (French Agency for Ecological Transition) and can be downloaded [here](https://data.ademe.fr/datasets/ademe-car-labelling). Data are also available in the folder "[data](https://github.com/cecilegltslmcs/car_co2_emission/tree/main/data)".
+Original dataset comes from ADEME (French Agency for Ecological Transition) and can be downloaded [here](https://data.ademe.fr/datasets/ademe-car-labelling). Data are also available in the folder [data](https://github.com/cecilegltslmcs/car_co2_emission/tree/main/data).
 
 ## Methodology
 
