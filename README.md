@@ -19,6 +19,7 @@ The aim of this project is to help people get an idea of the CO2 emissions produ
 |── scripts
     |── predict-test.py                     # contains a sample to test api
     |── train.py                            # train the final model
+|── .gitignore    
 |── Dockerfile                              # serving the model in a container
 |── Pipfile                                 # pipenv description
 |── Pipfile.lock                            # pipenv packages
